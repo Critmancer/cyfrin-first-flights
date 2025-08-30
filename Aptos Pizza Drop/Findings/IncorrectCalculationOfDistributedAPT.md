@@ -4,7 +4,7 @@
 
 When a user signs up, they are allowed to claim `PizzaDrop`. Claiming `PizzaDrop` will provide them a random amount of APT between 100 to 500 as per the documentation.
 
-APT is expressed as Octas on Aptos. 1 APT = 100,000,000 Octas.
+Aptos transfers in units called octas. 1 APT = 100,000,000 octas (8 decimals). When transacting on Aptos outside of normal UIs, you must pass the amount in Octas.
 
 In the `pizza_drop::get_random_slice` function, the calculation for the `random_amount` incorrectly assumes the number calculated will be expressed as APT, when its established above that APT is expressed as Octas on Aptos. If we focus on the following 3 lines here
 
