@@ -71,7 +71,8 @@ And a modification to the `get_random_slice` function
 ```
 ## References
 
-References Aptos Tokenomics - https://aptosfoundation.org/currents/aptos-tokenomics-overview 
-Aptos Labs Transaction Explorer - https://explorer.aptoslabs.com/?network=mainnet 
-Epoch Clock - https://www.epochconverter.com/clock
-APT Token - https://explorer.aptoslabs.com/coin/0x1::aptos_coin::AptosCoin/info?network=mainnet
+- [Aptos Tokenomics](https://aptosfoundation.org/currents/aptos-tokenomics-overview)  
+- [Aptos Labs Transaction Explorer](https://explorer.aptoslabs.com/?network=mainnet)  
+- [Epoch Clock](https://www.epochconverter.com/clock)  
+- [APT Token](https://explorer.aptoslabs.com/coin/0x1::aptos_coin::AptosCoin/info?network=mainnet)
+
