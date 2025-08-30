@@ -19,17 +19,17 @@ In the `pizza_drop::get_random_slice` function, the calculation for the `random_
     }
 ```
 
-`time` is expressed as EPOCH NOW in MS (Microseconds). The calculation for the above will look like
+`time` is expressed as `epoch` format in microseconds. The calculation for the above will look like based on the current epoch time:
 
 ```markdown
-time = 1756544411700
-random_val = 1756544411700 % 401 = 96 
-random_amount = 100 + 96 = 196 
+time = 1756549650000
+random_val = 1756549650000 % 401 = 133 
+random_amount = 133 + 96 = 229 
 ```
 
-This means the protocol is believed to provide the user with 196 APT when claiming their initial `PizzaDrop`.
+This means the protocol is believed to provide the user with 229 APT when claiming their initial `PizzaDrop`.
 
-However, as expressed previously, Aptos is expressed as Octas (100,000,000 | 10^8) so the user will only receive `0.00000196 APT`, severely being underpaid on their claim.
+However, as expressed previously, Aptos is expressed as Octas (100,000,000 | 10^8) so the user will only receive `0.00000229 APT`, severely being underpaid on their claim.
 
 As PizzaDrop is a core functional requirement of the Pizza Drop Protocol which all new users will utilise after signup, all users will be severely underpaid with "dust" amounts, therefore losing trust and favour in the protocol.
 
