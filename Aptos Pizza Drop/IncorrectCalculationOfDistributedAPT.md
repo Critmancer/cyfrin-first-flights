@@ -19,7 +19,7 @@ In the `pizza_drop::get_random_slice` function, the calculation for the `random_
     }
 ```
 
-`time` is expressed as `epoch` format in microseconds. The calculation for the above will look like this based on the current epoch time:
+`time` is expressed as EPOCH NOW in MS (Microseconds). The calculation for the above will look like
 
 ```markdown
 time = 1756549650000
@@ -69,7 +69,6 @@ And a modification to the `get_random_slice` function
         table::add(&mut state.users_claimed_amount, user_addr, random_amount);
     }
 ```
-## References
 
 - [Aptos Tokenomics](https://aptosfoundation.org/currents/aptos-tokenomics-overview)  
 - [Aptos Labs Transaction Explorer](https://explorer.aptoslabs.com/?network=mainnet)  
